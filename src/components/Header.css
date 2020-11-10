@@ -45,6 +45,7 @@
   border-left: 1px solid lightgray;
   color: grey;
   padding: 4px;
+  margin-bottom: -4px;
   background-color: #f0f0f0;
   cursor: pointer;
 }
