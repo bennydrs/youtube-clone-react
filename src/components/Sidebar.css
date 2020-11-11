@@ -1,5 +1,13 @@
 .sidebar {
-  flex: .2;
+  /* flex: .2; */
+  position: fixed;
+  width: 250px;
+  z-index: 1;
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  transition-property: width;
+  transition: .2s;
 }
 
 .sidebar > hr {
@@ -8,4 +16,18 @@
   background-color: lightgray;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.sidebar.hide {
+  width: 70px;
+}
+
+.sidebar.hide .sidebarRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.hide .sidebarRow h2 {
+  font-size: 10px;
+  margin: 0;
 }

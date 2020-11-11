@@ -8,13 +8,13 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar'
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-  const [inputSearch, setInputSearch] = useState('')
+const Header = ({showSidebar}) => {
+  const [inputSearch, setInputSearch] = useState('');
 
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon className="menu__icon" />
+        <MenuIcon className="menu__icon" onClick={showSidebar} />
         <Link to="/">
           <img className="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt=""/>
         </Link>

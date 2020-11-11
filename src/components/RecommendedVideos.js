@@ -5,7 +5,6 @@ import VideoCard from './VideoCard';
 const RecommendedVideos = () => {
   return (
     <div className="recommendedVideos">
-      <h2>Recmomended</h2>
       <div className="recommendedVideos__videos">
         <VideoCard
           title="Let's Build a YouTube Clone with REACT JS for Beginners"
@@ -23,7 +22,7 @@ const RecommendedVideos = () => {
           duration="4.29"
           channel="MrSuicideSheep"
           channelImage="https://yt3.ggpht.com/a-/AOh14Gj3vTleysR1RS28s6J-Ppb_zeNh4lrPdcbbMw=s68-c-k-c0x00ffffff-no-rj-mo"
-          image="https://i.ytimg.com/an_webp/NpSZHKoToHY/mqdefault_6s.webp?du=3000&sqp=CNTsp_0F&rs=AOn4CLCqksuE_Ldx3TDbSmUjGIxvWTd-2w"
+          image="https://i.ytimg.com/an_webp/NpSZHKoToHY/mqdefault_6s.webp?du=3000&sqp=CNLMrf0F&rs=AOn4CLBdU_ptdpqAZqoESAMJD_no6ByJ0Q"
         />
         <VideoCard
           title="Build a Responsive Website | HTML, CSS GRID, Flexbox"
@@ -56,10 +55,19 @@ const RecommendedVideos = () => {
           title="Top 10 CSS Tricks You Didn't Know!"
           views="313K views"
           timestamp="11 months ago"
-          duration="124.37"
+          duration="12.37"
           channel="Dev Ed"
           channelImage="https://yt3.ggpht.com/a-/AOh14GhqOT2rmcUlS-pOBQeg8m4GCYTXT87VKNoyyg=s68-c-k-c0x00ffffff-no-rj-mo"
           image='https://img.youtube.com/vi/CxC925yUxSI/maxresdefault.jpg'
+        />
+        <VideoCard
+          title="React Router Tutorial | React For Beginners"
+          views="409K views"
+          timestamp="11 months ago"
+          duration="33.10"
+          channel="Dev Ed"
+          channelImage="https://yt3.ggpht.com/a-/AOh14GhqOT2rmcUlS-pOBQeg8m4GCYTXT87VKNoyyg=s68-c-k-c0x00ffffff-no-rj-mo"
+          image='https://i.ytimg.com/vi/Law7wfdg_ls/mqdefault.jpg'
         />
       </div>
     </div>

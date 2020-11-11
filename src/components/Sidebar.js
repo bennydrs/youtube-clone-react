@@ -11,9 +11,10 @@ import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const Sidebar = () => {
+const Sidebar = ({sidebar}) => {
+  console.log(sidebar);
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar ? 'hide' : ''}`}>
       <SidebarRow active Icon={HomeIcon} title="Home" />
       <SidebarRow Icon={WhatshotIcon} title="Trending" />
       <SidebarRow Icon={SubscriptionsIcon} title="Subscription" />
